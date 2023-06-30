@@ -1,0 +1,39 @@
+.Userlist_container {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-left: 0;
+  background-color: #EAEAEA;
+  border-radius: 8px;
+}
+
+.Userlist_user {
+  list-style-type: none;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #333333;
+  font-family: "Arial", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .Userlist_container {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Userlist_container {
+    min-width: 200px;
+    max-width: 25%;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Userlist_container {
+    max-width: 20%;
+    padding-left: 0.5rem;
+  }
+}

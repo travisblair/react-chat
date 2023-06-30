@@ -1,0 +1,34 @@
+.MessageList_container {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 1rem;
+}
+
+.MessageList_messages {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.MessageList_message {
+  margin: 0 0 1rem;
+  padding: 1rem;
+  background-color: #EAEAEA;
+  border-radius: 8px;
+}
+
+.MessageList_sender {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333333;
+  font-family: "Arial", sans-serif;
+  color: #FF6600;
+  margin-bottom: 0.25rem;
+}
+
+.MessageList_text {
+  color: #333333;
+  font-family: "Arial", sans-serif;
+  color: #000;
+  line-height: 1.5;
+}

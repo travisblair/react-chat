@@ -1,0 +1,73 @@
+.UsernameForm {
+  grid-column: 1;
+  margin-top: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.UsernameForm_title {
+  margin-bottom: 0.625rem;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.UsernameForm_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.UsernameForm_inputGroup {
+  display: flex;
+  align-items: stretch;
+}
+
+.UsernameForm_input {
+  flex: 1;
+  width: 90%;
+  padding: 0.5rem;
+  background-color: #EAEAEA;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 2px solid #1976d2;
+  font-family: "Arial", sans-serif;
+  border-radius: 8px 0 0 8px;
+}
+
+.UsernameForm_input.error {
+  border: 2px solid #FF0000;
+}
+
+.UsernameForm_btn {
+  flex: 0 0 auto;
+  padding: 0 1rem;
+  background-color: #1976d2;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.UsernameForm_btn.error {
+  background-color: #FF0000;
+}
+
+.UsernameForm_btn:hover {
+  background-color: #45A049;
+}
+
+.UsernameForm_btn.error:hover {
+  background-color: #CC0000;
+}

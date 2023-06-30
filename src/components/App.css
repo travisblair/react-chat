@@ -1,0 +1,9 @@
+body {
+  background-color: #F5F5F5;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

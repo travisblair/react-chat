@@ -1,0 +1,45 @@
+.ChatInput {
+  grid-column: 1;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.ChatInput_input {
+  flex: 1;
+  width: 90%;
+  padding: 0.5rem;
+  background-color: #EAEAEA;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 2px solid #FF6600;
+  font-family: "Arial", sans-serif;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.ChatInput_btn {
+  flex: 0 0 auto;
+  width: auto;
+  height: 100%;
+  padding: 0 1rem;
+  background-color: #FF6600;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+.ChatInput_btn:hover {
+  background-color: #45A049;
+}
