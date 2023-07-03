@@ -33,7 +33,7 @@ const Userlist: React.FC<UserlistProps> = ({ firestore }) => {
     <div className="Userlist_container" ref={usersRef}>
       <ul className="Userlist_user">
         {sortedUsers.map((user: User, index: number) => (
-          <li key={index}>{user.username}</li>
+          <li key={`${user.username}-${index}`}>{user.username}</li>
         ))}
       </ul>
     </div>

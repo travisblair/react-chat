@@ -25,8 +25,10 @@ const MessageList: React.FC<MessageListProps> = ({ firestore }) => {
   if (error) {
     return (
       <ErrorMessage>
-        <p>Something went wrong: Unable to load chat room messages.</p>
-        <p>Please refresh your browser</p>
+        <div className="MessageList_message">
+          <p>Something went wrong: Unable to load chat room messages.</p>
+          <p>Please refresh your browser</p>
+        </div>
       </ErrorMessage>
     )
   }
@@ -39,7 +41,10 @@ const MessageList: React.FC<MessageListProps> = ({ firestore }) => {
     <div className="MessageList_container" ref={messagesRef}>
       <ul className="MessageList_messages">
         {sortedMessages.map((message: Message) => (
-          <li key={message.timestamp} className="MessageList_message">
+          <li
+            key={`${message.username}-${message.timestamp}`}
+            className="MessageList_message"
+          >
             <div className="MessageList_sender">
               {message.username} - {formatTimestamp(message.timestamp)}
             </div>

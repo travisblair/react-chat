@@ -18,7 +18,7 @@ const ErrorMessage: React.FC<ErrorMessageProps> = ({
   return (
     <div className={errorClasses}>
       {message}
-      {children && children}
+      {!!children && children}
     </div>
   )
 }

@@ -30,7 +30,7 @@ const UsernameForm: React.FC<UsernameFormProps> = ({ onUsernameSubmit }) => {
       }
 
       const usernameRef = collection(firestore, 'usernames');
-      const q = query(usernameRef, where('username', '==', username));
+      const q = query(usernameRef, where('username', '==', username.toLowerCase()));
       const querySnapshot: QuerySnapshot = await getDocs(q);
 
       if (!querySnapshot.empty) {
